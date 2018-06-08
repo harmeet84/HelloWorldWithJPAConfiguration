@@ -1,0 +1,65 @@
+.form {
+	background-color: #efefef;
+	width: 400px;
+	height: 50px;
+	border-radius: 7px;
+	padding: 20px;
+}
+
+.callout.primary {
+    background-color: #cacaca;
+    color: #0a0a0a;
+}
+
+.callout {
+    position: relative;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    border: 1px solid rgba(10, 10, 10, 0.25);
+    border-radius: 0;
+    background-color: white;
+    color: #0a0a0a;
+}
+
+.callout_new {
+    position: relative;
+    margin: 0 0.5rem 1rem 0.5rem;
+    padding: 1rem;
+    border: 1px solid rgba(10, 10, 10, 0.25);
+    border-radius: 0;
+    background-color: white;
+    color: #0a0a0a;
+    background-color: #f1f1f1;
+    
+}
+
+.callout_new1{
+    position: relative;
+    margin: 0 0.5rem 1rem 0.5rem;
+    padding: 1rem;
+    border: 1px solid rgba(10, 10, 10, 0.25);
+    border-radius: 0;
+    background-color: white;
+    color: #0a0a0a;
+    background-color: #f1f1f1;
+    
+}
+
+.table_heading {
+	border-style: solid;
+	background-color: #080909;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+
+
+.table_border {
+	border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table, thead {
+	
+    border: 1px solid grey;
+}

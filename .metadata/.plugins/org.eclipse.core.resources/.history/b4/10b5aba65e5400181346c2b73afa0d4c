@@ -1,0 +1,185 @@
+package com.springboot.config.domain;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+
+
+/**
+ * The persistent class for the API_LOAN_APPLICATION database table.
+ * 
+ */
+@Entity
+@Table(name="API_LOAN_APPLICATION")
+@NamedQuery(name="ApiLoanApplication.findAll", query="SELECT a FROM ApiLoanApplication a")
+public class ApiLoanApplication implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Column(name="AIP_DECISION")
+	private String aipDecision;
+
+	@Column(name="ANNUAL_INCOME")
+	private String annualIncome;
+	
+	@Id
+	@Column(name="APPLICATION_ID")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private String applicationId;
+
+	@Column(name="APPLICATION_NUMBER")
+	private String applicationNumber;
+
+	@Column(name="CUSTOMER_DOB")
+	private String customerDob;
+
+	@Column(name="CUSTOMER_NAME")
+	private String customerName;
+
+	@Column(name="CUSTOMER_POSTCODE")
+	private String customerPostcode;
+
+	@Column(name="LOAN_AMOUNT")
+	private BigDecimal loanAmount;
+
+	private BigDecimal ltv;
+
+	@Column(name="PROPERTY_VALUE")
+	private BigDecimal propertyValue;
+
+	private String status;
+
+	@Column(name="TERM_MONTHS")
+	private BigDecimal termMonths;
+
+	@Column(name="TIME_DATE_CREATED")
+	private String timeDateCreated;
+
+	public ApiLoanApplication() {
+	}
+
+	public String getAipDecision() {
+		return this.aipDecision;
+	}
+
+	public void setAipDecision(String aipDecision) {
+		this.aipDecision = aipDecision;
+	}
+
+	public String getAnnualIncome() {
+		return this.annualIncome;
+	}
+
+	public void setAnnualIncome(String annualIncome) {
+		this.annualIncome = annualIncome;
+	}
+
+	public String getApplicationId() {
+		return this.applicationId;
+	}
+
+	public void setApplicationId(String applicationId) {
+		this.applicationId = applicationId;
+	}
+
+	public String getApplicationNumber() {
+		return this.applicationNumber;
+	}
+
+	public void setApplicationNumber(String applicationNumber) {
+		this.applicationNumber = applicationNumber;
+	}
+
+	public String getCustomerDob() {
+		return this.customerDob;
+	}
+
+	public void setCustomerDob(String customerDob) {
+		this.customerDob = customerDob;
+	}
+
+	public String getCustomerName() {
+		return this.customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+
+	public String getCustomerPostcode() {
+		return this.customerPostcode;
+	}
+
+	public void setCustomerPostcode(String customerPostcode) {
+		this.customerPostcode = customerPostcode;
+	}
+
+	public BigDecimal getLoanAmount() {
+		return this.loanAmount;
+	}
+
+	public void setLoanAmount(BigDecimal loanAmount) {
+		this.loanAmount = loanAmount;
+	}
+
+	public BigDecimal getLtv() {
+		return this.ltv;
+	}
+
+	public void setLtv(BigDecimal ltv) {
+		this.ltv = ltv;
+	}
+
+	public BigDecimal getPropertyValue() {
+		return this.propertyValue;
+	}
+
+	public void setPropertyValue(BigDecimal propertyValue) {
+		this.propertyValue = propertyValue;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public BigDecimal getTermMonths() {
+		return this.termMonths;
+	}
+
+	public void setTermMonths(BigDecimal termMonths) {
+		this.termMonths = termMonths;
+	}
+
+	public String getTimeDateCreated() {
+		return this.timeDateCreated;
+	}
+
+	public void setTimeDateCreated(String timeDateCreated) {
+		this.timeDateCreated = timeDateCreated;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "ApiLoanApplication [aipDecision=" + aipDecision + ", annualIncome=" + annualIncome + ", applicationId="
+				+ applicationId + ", applicationNumber=" + applicationNumber + ", customerDob=" + customerDob
+				+ ", customerName=" + customerName + ", customerPostcode=" + customerPostcode + ", loanAmount="
+				+ loanAmount + ", ltv=" + ltv + ", propertyValue=" + propertyValue + ", status=" + status
+				+ ", termMonths=" + termMonths + ", timeDateCreated=" + timeDateCreated + "]";
+	}
+	
+	
+
+}

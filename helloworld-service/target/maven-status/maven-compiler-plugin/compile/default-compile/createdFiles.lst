@@ -1,0 +1,8 @@
+com\springboot\controller\HelloWorldController.class
+com\springboot\model\CustomerDetails.class
+com\springboot\helloworld\Application.class
+com\springboot\model\ApprovalDetails.class
+com\springboot\helloworld\test.class
+com\springboot\config\repo\ApiLoanApplicationRepository.class
+com\springboot\model\HelloWorld.class
+com\springboot\config\domain\ApiLoanApplication.class

@@ -1,0 +1,13 @@
+package com.springboot.helloworld;
+
+import java.util.Locale;
+
+public class test {
+	public static void main (String args[]) {
+		int min = 8;
+		int max = 8;
+		int randomNum = RandomStringUtils.randomAlphanumeric(30).toUpperCase(Locale.ENGLISH)
+		
+		System.out.println("value of rand = " + randomNum);
+	}
+}

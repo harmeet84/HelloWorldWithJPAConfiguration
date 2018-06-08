@@ -1,0 +1,74 @@
+package com.springboot.model;
+
+
+public class CustomerDetails {
+	
+	private String fullName;
+	private String dob;
+	private String postCode;
+	private String amount;
+	private String annualIncome;
+	/**
+	 * @return the fullName
+	 */
+	public String getFullName() {
+		return fullName;
+	}
+	/**
+	 * @param fullName the fullName to set
+	 */
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+	/**
+	 * @return the dob
+	 */
+	public String getDob() {
+		return dob;
+	}
+	/**
+	 * @param dob the dob to set
+	 */
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+	/**
+	 * @return the postCode
+	 */
+	public String getPostCode() {
+		return postCode;
+	}
+	/**
+	 * @param postCode the postCode to set
+	 */
+	public void setPostCode(String postCode) {
+		this.postCode = postCode;
+	}
+	/**
+	 * @return the amount
+	 */
+	public String getAmount() {
+		return amount;
+	}
+	/**
+	 * @param amount the amount to set
+	 */
+	public void setAmount(String amount) {
+		amount = amount;
+	}
+	/**
+	 * @return the annualIncome
+	 */
+	public String getAnnualIncome() {
+		return annualIncome;
+	}
+	/**
+	 * @param annualIncome the annualIncome to set
+	 */
+	public void setAnnualIncome(String annualIncome) {
+		this.annualIncome = annualIncome;
+	}
+	
+	
+	
+}

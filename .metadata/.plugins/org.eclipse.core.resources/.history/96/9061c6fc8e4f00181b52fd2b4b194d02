@@ -1,0 +1,41 @@
+package com.springboot.controller;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springboot.model.HelloWorld;
+
+
+
+@RestController
+public class HelloWorldController {
+	
+	
+	 	private static final String template = "Hello, %s!";
+	    private final AtomicLong counter = new AtomicLong();
+
+	    @RequestMapping("/hello")
+	    public HelloWorld helloworld(@RequestParam(value="name", defaultValue="World") String name) {
+	        return new HelloWorld(counter.incrementAndGet(),
+	                            String.format(template, name));
+	    }
+	    
+	    @RequestMapping("/customerApproval", method = ReuestMethod.POST)
+	    public HelloWorld helloworld(@RequestParam(value="name", defaultValue="World") String name) {
+	        return new HelloWorld(counter.incrementAndGet(),
+	                            String.format(template, name));
+	    }
+	
+	
+	/*@RequestMapping("/hello")
+	public String hello(Model model) {
+		model.addAttribute("message", "Hello World");
+	      return "hello";
+	   }*/
+	
+	
+	
+}

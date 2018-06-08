@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;helloworld-service/src/main/java/com/springboot/controller/SampleController.java&apos; to &apos;HelloWorldController.java&apos;" description="Rename resource &apos;SampleController.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/springboot/controller/SampleController.java" name="HelloWorldController.java" stamp="1524678793508" updateReferences="true"/>
+</session>

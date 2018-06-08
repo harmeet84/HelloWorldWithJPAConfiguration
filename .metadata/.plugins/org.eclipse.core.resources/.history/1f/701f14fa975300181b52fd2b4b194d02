@@ -1,0 +1,19 @@
+
+
+spring.mvc.view.prefix = /WEB-INF/views/
+spring.mvc.view.suffix = .jsp
+spring.mvc.static-path-pattern=/resources/**
+
+server.port = 8090
+
+#spring.jpa.database=default
+
+#spring.datasource.jndi-name=weblogic.jdbc.dataSource.localDbPool
+#spring.datasource.primary.expected-type=javax.sql.DataSource
+
+# Oracle settings
+#spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+#spring.datasource.username=system
+#spring.datasource.password=password
+#spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+

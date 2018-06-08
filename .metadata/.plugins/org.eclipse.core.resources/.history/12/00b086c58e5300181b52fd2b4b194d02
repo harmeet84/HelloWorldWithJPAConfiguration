@@ -1,0 +1,13 @@
+package com.springboot.helloworld;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+public class test {
+	public static void main (String args[]) {
+		int min = 8;
+		int max = 8;
+		int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
+		
+		System.out.println("value of rand = " + randomNum);
+	}
+}

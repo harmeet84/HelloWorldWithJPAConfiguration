@@ -1,0 +1,15 @@
+package com.springboot.config.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.springboot.config.domain.ApiLoanApplication;
+
+@Repository
+
+public interface ApiLoanApplicationRepository extends JpaRepository<ApiLoanApplication, String> {
+
+	ApiLoanApplication findByApplicationId(String applicationId);
+	
+	String findMaxByApplicationId();
+}
